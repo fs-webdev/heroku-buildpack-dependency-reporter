@@ -27,4 +27,4 @@ CACHE_DIR=${CACHE_DIR} \
 ENV_DIR=${ENV_DIR} \
 SOURCE_VERSION=${SOURCE_VERSION} \
 
-node ${BP_DIR}/lib/upload.js $BUILD_DIR | output "$LOG_FILE"
+node ${BP_DIR}/lib/upload.js | output "$LOG_FILE"
