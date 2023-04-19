@@ -22,9 +22,9 @@ source ${BP_DIR}/lib/output.sh
 cd ${BP_DIR}
 npm install | output "$LOG_FILE"
 
-BUILD_DIR=${BUILD_DIR} \
+export BUILD_DIR=${BUILD_DIR} \
 CACHE_DIR=${CACHE_DIR} \
 ENV_DIR=${ENV_DIR} \
-SOURCE_VERSION=${SOURCE_VERSION} \
+SOURCE_VERSION=${SOURCE_VERSION}
 
 node ${BP_DIR}/lib/upload.js | output "$LOG_FILE"
