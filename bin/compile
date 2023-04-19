@@ -26,4 +26,7 @@ BUILD_DIR=${BUILD_DIR} \
 CACHE_DIR=${CACHE_DIR} \
 ENV_DIR=${ENV_DIR} \
 SOURCE_VERSION=${SOURCE_VERSION} \
+
+### CD back to the build directory
+cd ${BUILD_DIR}
 node ${BP_DIR}/lib/upload.js | output "$LOG_FILE"
