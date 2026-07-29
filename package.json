@@ -18,8 +18,6 @@
   "homepage": "https://github.com/Lostmyname/heroku-buildpack-upload-static-assets-to-s3#readme",
   "dependencies": {
     "aws-sdk": "^2.5.0",
-    "lodash": "^4.15.0",
-    "mime-types": "^2.1.11",
     "shelljs": "^0.8.5"
   },
   "directories": {
