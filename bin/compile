@@ -20,7 +20,7 @@ source ${BP_DIR}/lib/output.sh
 
 ### Upload with Node
 cd ${BP_DIR}
-npm install | output "$LOG_FILE"
+npm install --registry=https://registry.npmjs.org | output "$LOG_FILE"
 
 export BUILD_DIR=${BUILD_DIR} \
 CACHE_DIR=${CACHE_DIR} \
